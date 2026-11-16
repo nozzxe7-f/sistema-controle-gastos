@@ -1,0 +1,21 @@
+CASOS INICIAIS DE TESTE
+
+Teste 1 — Consulta sem despesas
+Entradas: orçamento R$ 500,00; opção 2.
+Resultado esperado: total gasto R$ 0,00; saldo R$ 500,00; porcentagem 0%.
+
+Teste 2 — Uma despesa
+Entradas: orçamento R$ 500,00; despesa R$ 100,00; opção 2.
+Resultado esperado: total gasto R$ 100,00; saldo R$ 400,00; porcentagem 20%.
+
+Teste 3 — Duas despesas
+Entradas: orçamento R$ 500,00; despesas R$ 100,00 e R$ 50,00; opção 2.
+Resultado esperado: total gasto R$ 150,00; saldo R$ 350,00; porcentagem 30%.
+
+Teste 4 — Despesa inválida
+Entradas: orçamento R$ 500,00; despesa R$ 0,00.
+Resultado esperado: exibir mensagem pedindo valor maior que zero e não alterar o total.
+
+Teste 5 — Orçamento inválido
+Entrada: orçamento R$ 0,00.
+Resultado esperado: pedir que o usuário informe orçamento maior que zero.

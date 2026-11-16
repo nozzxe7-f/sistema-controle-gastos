@@ -1,0 +1,33 @@
+FLUXO PRINCIPAL (REPRESENTAÇÃO EM TEXTO)
+
+[INÍCIO]
+    |
+    v
+[Ler orçamento]
+    |
+    v
+{Orçamento maior que zero?}
+    | NÃO -> [Pedir orçamento novamente] --+
+    | SIM                                  |
+    v                                      |
+[Definir total gasto = 0]                  |
+    |                                      |
+    v                                      |
+[Mostrar menu e ler opção] <---------------+
+    |
+    v
+{Opção escolhida?}
+    | 1                         | 2                         | 0
+    v                           v                           v
+[Ler despesa]             [Calcular saldo e            [Encerrar]
+    |                      porcentagem]                    |
+    v                           |                           v
+{Despesa > 0?}                  v                          [FIM]
+ | SIM -> [Somar ao total] [Mostrar resumo]
+ | NÃO -> [Mostrar erro]        |
+    |                           |
+    +------------> [Voltar ao menu]
+                 (enquanto opção != 0)
+
+Se a opção não for 1, 2 ou 0:
+[Mostrar opção inválida] -> [Voltar ao menu]

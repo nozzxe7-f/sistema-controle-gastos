@@ -1,0 +1,31 @@
+INÍCIO
+    Ler o orçamento inicial.
+
+    Enquanto o orçamento for menor ou igual a zero:
+        Pedir o orçamento novamente.
+
+    Definir totalGasto como zero.
+    Definir opção como -1.
+
+    Enquanto opção for diferente de zero:
+        Mostrar o menu.
+        Ler a opção escolhida.
+
+        Se opção for 1:
+            Ler o valor da despesa.
+            Se a despesa for maior que zero:
+                Somar a despesa ao totalGasto.
+            Senão:
+                Mostrar mensagem de valor inválido.
+
+        Senão, se opção for 2:
+            saldo = orçamento - totalGasto
+            porcentagem = (totalGasto / orçamento) * 100
+            Mostrar orçamento, total gasto, saldo e porcentagem.
+
+        Senão, se opção for 0:
+            Mostrar mensagem de encerramento.
+
+        Senão:
+            Mostrar mensagem de opção inválida.
+FIM
